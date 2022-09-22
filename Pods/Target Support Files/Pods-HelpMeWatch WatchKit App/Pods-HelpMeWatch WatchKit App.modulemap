@@ -1,0 +1,6 @@
+framework module Pods_HelpMeWatch_WatchKit_App {
+  umbrella header "Pods-HelpMeWatch WatchKit App-umbrella.h"
+
+  export *
+  module * { export * }
+}

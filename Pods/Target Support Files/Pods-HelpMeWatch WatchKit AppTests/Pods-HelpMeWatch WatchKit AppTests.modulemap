@@ -1,0 +1,6 @@
+framework module Pods_HelpMeWatch_WatchKit_AppTests {
+  umbrella header "Pods-HelpMeWatch WatchKit AppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
