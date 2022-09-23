@@ -12,7 +12,7 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HelpMeWatch_WatchKit_App" customModuleProvider="target">
                     <items>
                         <imageView width="134" height="102" alignment="center" image="helpMeLogo" contentMode="scaleAspectFit" animationDuration="1" id="1rF-xc-LfJ"/>
-                        <button width="134" height="38" alignment="left" title="HelpMe!" id="AIJ-oc-QFr">
+                        <button width="134" height="38" alignment="center" title="HelpMe!" id="AIJ-oc-QFr">
                             <connections>
                                 <action selector="PressAlert" destination="AgC-eL-Hgc" id="cu1-Gw-lkG"/>
                             </connections>
