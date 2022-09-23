@@ -8,9 +8,6 @@ target 'HelpMeWatch' do
   # Pods for HelpMeWatch
 
 	pod 'Alamofire', '~> 5.2'
-	pod 'FireStore'
-	pod 'Firebase/Core', '~> 5.12.0'
-	pod 'Firebase/Firestore', '~> 5.12.0'
 
 
 end

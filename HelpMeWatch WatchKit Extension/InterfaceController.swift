@@ -11,12 +11,15 @@ import Alamofire
 
 class InterfaceController: WKInterfaceController {
     
+    @IBOutlet weak var imgProfile: WKInterfaceImage!
     override func awake(withContext context: Any?) {
         // Configure interface objects here.
     }
     
     override func willActivate() {
+        
         // This method is called when watch view controller is about to be visible to user
+        
     }
     
     override func didDeactivate() {
@@ -27,7 +30,7 @@ class InterfaceController: WKInterfaceController {
         
         
        
-           AF.request("https://rickandmortyapi.com/api/character", method: .get, encoding: JSONEncoding.default) { urlRequest in
+           AF.request("http://192.168.100.4:3057/api/firestore/helpmewatch", method: .post, encoding: JSONEncoding.default) { urlRequest in
                 urlRequest.timeoutInterval = 1000
                 if #available(iOS 13.0, *) {
                     urlRequest.allowsConstrainedNetworkAccess = false

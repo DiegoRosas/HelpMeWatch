@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="20037" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="21225" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="20006"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="21040"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
@@ -11,8 +11,18 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HelpMeWatch_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <imageView width="134" height="102" alignment="center" image="helpMeLogo" contentMode="scaleAspectFit" animationDuration="1" id="1rF-xc-LfJ"/>
+                        <group width="1" alignment="left" id="F2g-jb-ilb">
+                            <items>
+                                <imageView width="24" height="19" alignment="left" image="helpMeLogo" contentMode="scaleAspectFit" animationDuration="1" id="1rF-xc-LfJ"/>
+                                <label alignment="right" text="Vasti Rojas" id="iKZ-Ab-oxh">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </label>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="VGU-Z1-iOK"/>
+                        <group width="87" height="120" alignment="center" backgroundImage="vasti" contentMode="scaleAspectFill" radius="14" id="eKF-CL-QHy"/>
                         <button width="134" height="38" alignment="center" title="HelpMe!" id="AIJ-oc-QFr">
+                            <color key="backgroundColor" red="0.2901960784" green="0.2156862745" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
                                 <action selector="PressAlert" destination="AgC-eL-Hgc" id="cu1-Gw-lkG"/>
                             </connections>
@@ -20,7 +30,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="158" y="323"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -56,5 +66,6 @@
     </scenes>
     <resources>
         <image name="helpMeLogo" width="512.5" height="512"/>
+        <image name="vasti" width="304" height="512"/>
     </resources>
 </document>
