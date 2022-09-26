@@ -27,7 +27,7 @@ class InterfaceController: WKInterfaceController {
     
     @IBAction func PressAlert() {
         
-           AF.request("http://192.168.100.4:3057/api/firestore/helpmewatch", method: .post, encoding: JSONEncoding.default) { urlRequest in
+           AF.request("https://helpmeserve.herokuapp.com/api/firestore/helpmewatch", method: .post, encoding: JSONEncoding.default) { urlRequest in
                 urlRequest.timeoutInterval = 1000
                 if #available(iOS 13.0, *) {
                     urlRequest.allowsConstrainedNetworkAccess = false
